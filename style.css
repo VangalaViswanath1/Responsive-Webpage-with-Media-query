@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    height: 10%;
+    align-items: center;
+    
+}
+.header_logo{
+    font-size: 4vw;
+}
+
+.header_menu{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 2.5vw;
+    font-style: italic;
+}
+
+.main{
+    height: 80%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+}
+
+.main_image{
+    width: 50%;
+    background-image: url(./img/Portrait.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;   
+    /* background-color:#f5b602; */
+    /* padding-top: 20px;
+    border-image:3 0px ; */
+}
+
+.main_text{
+    width: 50%;
+    /* background-color:#f5b602; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_text_1{
+    font-size: 10vw;
+}
+
+span{
+    color: red;
+}
+
+.main_text_2, .main_text_3, .main_text_4{
+    font-size: 4vw;
+}
+
+.footer{
+    height: 10%;
+    /* border: 2px solid gray; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10%;
+}
+
+.footer img{
+    width: 4.3vw;
+}
+
+@media (max-width: 600px){
+    .header{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header_menu{
+        display: none;
+    }
+
+    .header_logo{
+        font-size: 40px;
+ 
+     }
+
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_image{ 
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .main_text{
+        width: 100%;
+    }
+
+    .main_text_1{
+        display: none;
+    }
+    
+    .main_text_2, .main_text_3, .main_text_4{
+        font-size: 30px;
+    }
+    .footer{
+       justify-content: center;
+       align-items: center;
+       margin-right: 0;
+    }
+    .footer img {
+       width: 45px;
+       height: 45px;
+    }
+}
